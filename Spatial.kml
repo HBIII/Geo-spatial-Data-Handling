@@ -1,0 +1,174 @@
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+	<Style id="z1">
+		<IconStyle>
+			<Icon>
+				<href>
+					http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png
+				</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Placemark>
+		<name>Home</name>
+		<styleUrl>#z1</styleUrl>
+		<Point>
+			<coordinates>-118.288210,34.030191</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Leavey Library</name>
+		<styleUrl>#z1</styleUrl>
+		<Point>
+			<coordinates>-118.282980,34.021911</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Galen Center</name>
+		<styleUrl>#z1</styleUrl>
+		<Point>
+			<coordinates>-118.279938,34.021118</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>School of Cinematics Arts</name>
+		<styleUrl>#z1</styleUrl>
+		<Point>
+			<coordinates>-118.286492,34.023642</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Usc Village</name>
+		<styleUrl>#z1</styleUrl>
+		<Point>
+			<coordinates>-118.284894,34.025383</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Viterbi building</name>
+		<styleUrl>#z1</styleUrl>
+		<Point>
+			<coordinates>-118.288854,34.020522</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Engemenn Health Center</name>
+		<styleUrl>#z1</styleUrl>
+		<Point>
+			<coordinates>-118.288914,34.025280</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Popovich Hall</name>
+		<styleUrl>#z1</styleUrl>
+		<Point>
+			<coordinates>-118.282987,34.018934</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Ronald Tutor Campus Center</name>
+		<styleUrl>#z1</styleUrl>
+		<Point>
+			<coordinates>-118.286500,34.020256</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>City Park Appartment</name>
+		<styleUrl>#z1</styleUrl>
+		<Point>
+		<coordinates>-118.290519,34.027732</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Shrine auditorium</name>
+		<styleUrl>#z1</styleUrl>
+		<Point>
+			<coordinates>-118.281317,34.023584</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark>
+		<name>Parkside apts</name>
+		<styleUrl>#z1</styleUrl>
+		<Point>
+			<coordinates>-118.291052,34.019065</coordinates>
+		</Point>
+	</Placemark>
+
+
+
+	<Style id="convex_hull">
+            <PolyStyle>
+                <color>50B41414</color>
+                <outline>1</outline>
+            </PolyStyle>
+        </Style>
+    <Placemark>
+        <name>Convex Hull</name>
+        <Polygon>
+            <outerBoundaryIs>
+                <LinearRing>
+                    <coordinates>
+						-118.282987,34.018934
+						-118.291052,34.019065
+						-118.290519,34.027732
+						-118.28821,34.030191
+						-118.281317,34.023584
+						-118.279938,34.021118
+						-118.282987,34.018934
+                    </coordinates>
+                </LinearRing>
+            </outerBoundaryIs>
+        </Polygon>
+        <styleUrl>#convex_hull</styleUrl>
+    </Placemark>
+
+
+
+    <Style id="nearest_neighbor">
+            <LineStyle>
+                <width>4</width>
+                <color>#ff0080ff</color>
+            </LineStyle>
+        </Style>
+        <Placemark>
+            <name>line(Home,Neighbor1)</name>
+            <LineString>
+                <coordinates>
+                    -118.288210,34.030191
+                    -118.290519,34.027732
+                </coordinates>
+            </LineString>
+            <styleUrl>#nearest_neighbor</styleUrl>
+        </Placemark>
+        <Placemark>
+            <name>line(Home,Neighbor2)</name>
+            <LineString>
+                <coordinates>
+                    -118.288210,34.030191
+                    -118.288914,34.025280
+                </coordinates>
+            </LineString>
+            <styleUrl>#nearest_neighbor</styleUrl>
+        </Placemark>
+        <Placemark>
+            <name>line(Home,Neighbor3)</name>
+            <LineString>
+                <coordinates>
+                    -118.288210,34.030191
+                    -118.284894,34.025383
+                </coordinates>
+            </LineString>
+            <styleUrl>#nearest_neighbor</styleUrl>
+        </Placemark>
+        <Placemark>
+            <name>line(Home,Neighbor3)</name>
+            <LineString>
+                <coordinates>
+                    -118.288210,34.030191
+                    -118.286492,34.023642
+                </coordinates>
+            </LineString>
+            <styleUrl>#nearest_neighbor</styleUrl>
+        </Placemark>
+</Document>
+</kml>
